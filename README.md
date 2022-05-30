@@ -19,7 +19,7 @@ https://loanstreetapi.azurewebsites.net/loans
 
 #### Add a loan
 
-```http
+```bash
   curl -X POST 'https://loanstreetapi.azurewebsites.net/loans' -H 'Content-Type: application/json' -d '{
     \"paidAmt\": \"123456789.00\",
     \"interestRate\": \"1.20\",
@@ -30,7 +30,7 @@ https://loanstreetapi.azurewebsites.net/loans
 
 #### Get all loans
 
-```http
+```bash
   curl -X GET 'https://loanstreetapi.azurewebsites.net/loans'
 ```
 
@@ -40,7 +40,7 @@ https://loanstreetapi.azurewebsites.net/loans
 
 #### Get a loan
 
-```http
+```bash
   curl -X GET 'https://loanstreetapi.azurewebsites.net/loans/{id}'
 ```
 
@@ -50,7 +50,7 @@ https://loanstreetapi.azurewebsites.net/loans
 
 #### Update a loan
 
-```http
+```bash
   curl -X PUT 'https://loanstreetapi.azurewebsites.net/loans/{id}' -H 'Content-Type: application/json' -d '{
 	\"paidAmt\": \"0.00\",
     \"interestRate\": \"0.01\",
